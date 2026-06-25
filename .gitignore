@@ -1,0 +1,21 @@
+# Secret data - NEVER commit files containing actual passwords or tokens
+# It is better to use a secret management tool, but if you create local
+# secret files for testing, ignore them here.
+*-secret.yaml
+secrets/
+
+# Temporary files created by editors or OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local kubectl configuration or context exports
+kubeconfig
+.kube/
+
+# Helm dependencies (if you use Helm later)
+charts/
+tmp/
+
+temp/
